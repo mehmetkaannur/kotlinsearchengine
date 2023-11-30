@@ -13,7 +13,8 @@ fun main() {
            <title>A Simple HTML Document</title>
          </head>
            <body>
-             <p>This is a very simple <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> document.</p>
+             <p>This is a very simple <a 
+             href="https://en.wikipedia.org/wiki/HTML">HTML</a> document.</p>
              <p>It only has   two    paragraphs.</p>
            </body>
         </html>"""
@@ -37,11 +38,13 @@ fun main() {
     println(link)
   }
 
-  // A different approach to dealing with the nullable value is to use the "safe-call" operator ?.
+  // A different approach to dealing with the nullable
+  // value is to use the "safe-call" operator ?.
   // This says, if firstTag is null, don't call .attr(), just return null.
   println(firstTag?.attr("href"))
 
-  // You can also use the "Elvis" operator ?: to use a specific value if the safe-call returns null
+  // You can also use the "Elvis" operator ?: to use a specific
+  // value if the safe-call returns null
   println(firstTag?.attr("href") ?: "")
 
   // do the same thing using a CSS selector

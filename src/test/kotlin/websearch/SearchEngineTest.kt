@@ -12,7 +12,8 @@ class SearchEngineTest {
            <title>Department of Computing</title>
          </head>
            <body>
-             <p>Welcome to the Department of Computing at <a href="https://www.imperial.ac.uk">Imperial College London</a>.</p>
+             <p>Welcome to the Department of Computing at <a 
+             href="https://www.imperial.ac.uk">Imperial College London</a>.</p>
            </body>
         </html>"""
 
@@ -22,8 +23,11 @@ class SearchEngineTest {
            <title>Imperial College London</title>
          </head>
            <body>
-             <p>Imperial people share ideas, expertise and technology to find answers to the big scientific questions and tackle global challenges</p>
-             <p>See the latest news about our research on the <a href="https://www.bbc.co.uk/news">BBC</a></p>
+             <p>Imperial people share ideas, expertise and technology to find 
+             answers to the big scientific 
+             questions and tackle global challenges</p>
+             <p>See the latest news about our research on the 
+             <a href="https://www.bbc.co.uk/news">BBC</a></p>
            </body>
         </html>"""
 
@@ -56,8 +60,10 @@ class SearchEngineTest {
     assertEquals("news", summary.query)
     assertEquals(2, summary.results.size)
 
-    assertResultsMatch("https://www.bbc.co.uk/news", 2, summary.results[0])
-    assertResultsMatch("https://www.imperial.ac.uk", 1, summary.results[1])
+    assertResultsMatch("https://www.bbc.co.uk/news",
+      2, summary.results[0])
+    assertResultsMatch("https://www.imperial.ac.uk",
+      1, summary.results[1])
   }
 
   private fun assertResultsMatch(

@@ -37,7 +37,8 @@ class WebPageTest {
                 <title>Simple Page</title>
               </head>
               <body>
-                <p>This is a very, very simple <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> document.</p>
+                <p>This is a very, very simple <a 
+                href="https://en.wikipedia.org/wiki/HTML">HTML</a> document.</p>
               </body>
             </html>"""
 
@@ -73,8 +74,10 @@ class WebPageTest {
 //                <title>Simple Page</title>
 //              </head>
 //              <body>
-//                <p>This is a simple <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> document.</p>
-//                <p>But it has two <a href="https://www.w3schools.com/html/html_links.asp">links</a>.</p>
+//                <p>This is a simple <a href=
+//                "https://en.wikipedia.org/wiki/HTML">HTML</a> document.</p>
+//                <p>But it has two <a href=
+//                "https://www.w3schools.com/html/html_links.asp">links</a>.</p>
 //              </body>
 //            </html>"""
 //
