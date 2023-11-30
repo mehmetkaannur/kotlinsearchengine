@@ -19,3 +19,6 @@ private fun loadPage(filename: String) =
         .joinToString("\n")
     )
   )
+ fun main() {
+   println(downloadedWebPages)
+ }
